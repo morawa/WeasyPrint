@@ -32,3 +32,16 @@ pagination, and meant to be easy to hack on.
 * Website: http://weasyprint.org/
 * Latest documentation: http://weasyprint.org/docs/
 * Source code and issue tracker: https://github.com/Kozea/WeasyPrint
+
+Pretty Page Breaking branch
+###########################
+
+These non-standard extensions will be added to give better control of page
+breaking behavior and other aesthetics:
+
+* Header/footer stack: stack of elements (table/div) which will be rendered
+  on top/bottom of the page between <push> and <pop>
+* Stickness factor (default 1.0) to decide which elements should be more or less
+  "sticked" (hard to break pages between them)
+* Compactness factor for whole document which has influence for compromise
+  between page count and stickness sum on page breaks
